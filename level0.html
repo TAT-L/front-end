@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var str = 'it a good day';
+    
+function change(str){
+    //切割字符串
+	 str = str.split(' ');
+    for(var i = 0;i<str.length;i++){
+       str[i]=str[i].replace(str[i][0],str[i][0].toUpperCase())
+    }
+    console.log(str.join(' '));
+}
+change(str)     //'Today Is A Happy Day'
+   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
